@@ -25,6 +25,8 @@
 		578C230C2982CCCC0052F518 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C230B2982CCCC0052F518 /* RegisterView.swift */; };
 		578C230F2982CD470052F518 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C230E2982CD470052F518 /* FirestoreManager.swift */; };
 		578C23122982CD6A0052F518 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C23112982CD6A0052F518 /* Dog.swift */; };
+		578C23142982D6840052F518 /* Funding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C23132982D6840052F518 /* Funding.swift */; };
+		578C23162982D6EF0052F518 /* FirestoreFundingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578C23152982D6EF0052F518 /* FirestoreFundingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		578C230B2982CCCC0052F518 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		578C230E2982CD470052F518 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		578C23112982CD6A0052F518 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		578C23132982D6840052F518 /* Funding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Funding.swift; sourceTree = "<group>"; };
+		578C23152982D6EF0052F518 /* FirestoreFundingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreFundingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				578C230E2982CD470052F518 /* FirestoreManager.swift */,
+				578C23152982D6EF0052F518 /* FirestoreFundingManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				578C23112982CD6A0052F518 /* Dog.swift */,
+				578C23132982D6840052F518 /* Funding.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,9 +327,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				578C22BC2982C7B90052F518 /* AppDelegate.swift in Sources */,
+				578C23162982D6EF0052F518 /* FirestoreFundingManager.swift in Sources */,
 				578C230F2982CD470052F518 /* FirestoreManager.swift in Sources */,
 				578C23082982CCB30052F518 /* HomeView.swift in Sources */,
 				578C22C02982C7B90052F518 /* Experience.rcproject in Sources */,
+				578C23142982D6840052F518 /* Funding.swift in Sources */,
 				578C230C2982CCCC0052F518 /* RegisterView.swift in Sources */,
 				578C230A2982CCC30052F518 /* LoginView.swift in Sources */,
 				578C23122982CD6A0052F518 /* Dog.swift in Sources */,

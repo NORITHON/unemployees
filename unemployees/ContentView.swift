@@ -16,7 +16,7 @@ struct ContentView : View {
         //else go to register
         
         
-        HomeView().environmentObject(FirebaseManager())
+        HomeView()
         
         
     }

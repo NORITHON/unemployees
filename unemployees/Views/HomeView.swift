@@ -8,21 +8,31 @@ import SwiftUI
 import Firebase
 
 struct HomeView: View {
-    @EnvironmentObject var firebaseManager: FirebaseManager
+    @EnvironmentObject var firestoreFundingManager: FirestoreFundingManager
 //    @State private var showPopUp = false
     init(){
-        
     }
     var body: some View {
+        
         NavigationView {
-            List(firebaseManager.dogs, id: \.name){dog in
-                Text("\(dog.name)")
-            }.navigationTitle("Dogs")
+            List(firestoreFundingManager.fundings, id: \.self){ funding in
+                NavigationLink(funding.title) {
+                    x()
+                }
+                HStack{
+                    Text("\(funding.title)")
+                    Text("\(funding.currentAmount)")
+                    Text("\(funding.targetAmount)")
+                }.onTapGesture {
+                    //navigate to detail
+                }
+                
+            }.navigationTitle("Fundings")
                 .navigationBarItems(trailing: Button(action: {
                     //add dogs
 //                    showPopUp.toggle()
                 }, label: {
-                    Image(systemName: "plus")
+//                    Image(systemName: "plus")
                 }))
 //                .sheet(isPresented: $showPopUp) {
 //                    //pop up
@@ -33,6 +43,6 @@ struct HomeView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView().environmentObject(FirebaseManager())
+        HomeView().environmentObject((FirestoreFundingManager()))
     }
 }
