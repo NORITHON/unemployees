@@ -4,15 +4,35 @@
 //
 //  Created by Alex Cho on 2023/01/26.
 //
-
 import SwiftUI
 import RealityKit
 
 struct ContentView : View {
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        
+    
+//        ARViewContainer().edgesIgnoringSafeArea(.all)
+    //if logged in go to home
+        //else go to register
+        
+        
+        HomeView().environmentObject(FirebaseManager())
+        
+        
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 struct ARViewContainer: UIViewRepresentable {
     

@@ -1,41 +1,18 @@
 //
 //  ContentView.swift
-//  norithon
+//  unemployees
 //
 //  Created by Alex Cho on 2023/01/26.
 //
 
 import SwiftUI
 import RealityKit
-import Firebase
+
 struct ContentView : View {
     var body: some View {
-        
-        
-        @State private var 
-        //        ARViewContainer().edgesIgnoringSafeArea(.all)
-        
-        //login or register here
-        //if logged in go to home
-        //else go to register
-        HomeView().environmentObject(FirebaseManager())}
-    
-    
-    
-    
-    
-    
+        ARViewContainer().edgesIgnoringSafeArea(.all)
+    }
 }
-
-
-
-
-
-
-
-
-
-
 
 struct ARViewContainer: UIViewRepresentable {
     

@@ -1,11 +1,9 @@
 //
-//  FirebaseManager.swift
-//  norithon
+//  FirestoreManager.swift
+//  unemployees
 //
-//  Created by Alex Cho on 2023/01/26.
+//  Created by Alex Cho on 2023/01/27.
 //
-
-import Foundation
 
 import Foundation
 import Firebase
